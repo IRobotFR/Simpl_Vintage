@@ -1,0 +1,132 @@
+/*
+Theme Name: OceanWP Child Theme
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme. Sample child theme.
+Author: OceanWP
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+
+#main #content-wrap {
+	padding-top: 0px;
+}
+
+
+/* modifications metaslider front page */
+
+.e-con>.e-con-inner>.elementor-widget>.elementor-widget-container {
+	padding-top: 25px;
+}
+
+.metaslider.ms-theme-cubic .flexslider ul.slides .caption-wrap, .metaslider.ms-theme-cubic .rslides .caption-wrap, .metaslider.ms-theme-cubic div.nivoSlider .nivo-caption {
+    background: rgba(0,0,0,0) !important;
+}
+
+#customslide .caption {
+	font-size: 2.4rem;
+	font-weight: bold;
+	color: #C39800;
+	font-family: montserrat;
+	background-color: #060957;
+	padding: 50px;
+}
+
+/* modifications gallery page */
+
+#custom-gallery .elementor-2 .elementor-element.elementor-element-7906859 > .elementor-widget-container {
+    margin: 0px;
+}
+
+#custom-gallery .elementor-91 .elementor-element.elementor-element-d8d4640 .elementor-heading-title {
+	padding-top: 30px;
+}
+
+#custom-gallery img {
+	aspect-ratio: 1;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+	#custom-gallery .gallery-item {
+		max-width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#custom-gallery .gallery-item {
+		max-width: 50%;
+	}
+}
+
+
+/* modifications single post page */
+
+.single-post.content-max-width .entry-header {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.single .thumbnail img {
+    max-width: 700px;
+}
+
+.single-post.content-max-width ul.meta {
+    justify-content: left;
+}
+
+.single-post ul.meta li i {
+    color: transparent;
+	padding-right: 0px;
+	padding-left: 3px;
+}
+
+.thumbnail-caption {
+	display: none;
+}
+
+/* modifications footer all pages */
+
+#menu-menupieddepage {
+	vertical-align: top;
+}
+
+#footer-bottom #footer-bottom-menu, #footer-bottom #copyright {
+	width: 100%;
+}
+
+#footer-bottom #footer-bottom-menu li:after {
+	color: #FFF8EF;
+	vertical-align: top;
+}
+
+/* modifications articles gallery page */
+
+.related-thumb img {
+	max-height: 160px;
+	object-fit: cover;
+}
+
+
+.page-header-title {
+    font-weight: 600;
+}
+
+.page-jump a {
+	color: #060957;
+}
+
+.page-jump a:hover {
+	color: #c39800;
+}
+
+
+/* modifications articles pages */
+
+.single-post.content-max-width .thumbnail {
+	max-width: 700px;
+}
+
